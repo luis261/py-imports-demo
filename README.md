@@ -24,7 +24,7 @@ However, as you can see, when running the target module directly, you'll get an 
 This is caused by the fact that when running this way, Python isn't aware it's running in a package at all (as evidenced by the value of `__name__`).
 That arguably makes sense to some degree, but has quite annoying implications. AFAIK, there is no way to craft location-agnostic imports (without multiple attempts and catching `ImportError`s along the way) OR stooping to `sys.path` hacks. https://stackoverflow.com/questions/16981921/relative-imports-in-python-3.
 
-this works, but you probably wouldn't want to force invokations to adhere to this scheme:
+this also works, but you probably wouldn't want to force invokations to adhere to this scheme:
 ```
 C:\SOMEPATH\py-imports-demo>python -m mod.target
 Running target.py, with __name__: __main__
