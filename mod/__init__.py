@@ -1,1 +1,1 @@
-# nothing
+# this is a Python package
